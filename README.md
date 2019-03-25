@@ -45,3 +45,15 @@ $ pip install firebase-admin
 $ pip install time      #only if you want to give delays like: time.sleep(3)
 ```
 
+After making sure you are getting the accurate values from your arduino, connect your raspberry pi with your arduino as mentioned [here](https://www.instructables.com/id/Raspberry-Pi-Arduino-Serial-Communication/).
+Now our arduino code is running on a serial connection on the raspberry pi continuously. You can check if your raspberry pi detected your arduino by running the following command in your terminal:
+
+```sh
+ls /dev/tty*
+```
+If /dev/ttyACM0 shows up in the list, you're good to go!
+Now run the python script by running the following command in your terminal:
+```sh
+python rev.py
+```
+This will send your arduino data to your firebase realtime database. Which you can use in an android app.
