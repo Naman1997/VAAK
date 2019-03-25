@@ -14,4 +14,16 @@ VAAK is a college project under the TARP course. Under this course people had to
 
 # Breif working of the project
 
-We 
+We use flex sensors for getting the input from the fingers of the user. These sensors are connected to an arduino uno, which processes and sends the data to a raspberry pi serially or to a wifi card, which then sends the data to a firebase realtime database. The android app interacts with this database and reads out the interpreted text.
+
+For now, we did not study the American Sign Language, so we used the sensors to send alphabet combinations instead.
+For example, since we have 26 alphabets, we use 5 flex sensors and assign each binary combinaion of the input to a specific alphabet.
+
+
+So the project can be divided in the following parts:
+  - Getting the data from arduino uno
+  - Processing the data inside the arduino script
+  - Sending the data to a raspberry pi, or a wifi module
+  - Transmitting the data to a specific firebase realtime database
+  - Using the android app to consume the data from the database
+  - Using the app to control the speakers connected to the device and reading out the text/alphabet
