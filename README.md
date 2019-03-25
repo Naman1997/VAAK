@@ -27,3 +27,17 @@ So the project can be divided in the following parts:
   - Transmitting the data to a specific firebase realtime database
   - Using the android app to consume the data from the database
   - Using the app to control the speakers connected to the device and reading out the text/alphabet
+
+The code given in this repo is only for *alphabet* reading and nothing else.
+
+We used a raspberry pi to send the data to the firebase realtime database using the *rev.py* script. You can learn more about it [here](https://www.instructables.com/id/Raspberry-Pi-Arduino-Serial-Communication/).
+
+### Installation
+
+The application requires [Arduino IDE](https://www.microsoft.com/en-in/p/arduino-ide/9nblggh4rsd8?ocid=badge&rtc=1&activetab=pivot%3Aoverviewtab) so that you can push your code into your arduino and needs [Android Studio](https://developer.android.com/studio) so that you can build the android app files.
+
+If you are using a raspberry pi as we have to send the data over to a firebase realime database, you will need to install the following dependencies:
+
+
+```sh
+$ pip install 
