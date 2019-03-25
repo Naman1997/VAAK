@@ -40,4 +40,8 @@ If you are using a raspberry pi as we have to send the data over to a firebase r
 
 
 ```sh
-$ pip install 
+$ pip install serial
+$ pip install firebase-admin
+$ pip install time      #only if you want to give delays like: time.sleep(3)
+```
+
