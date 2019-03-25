@@ -1,6 +1,6 @@
 # tarp-serial-connection-code
 [![N|Solid](https://i.ebayimg.com/images/g/pT0AAOSwX~dWmbz4/s-l300.jpg)](https://www.arduino.cc/)
-[![N|Solid](https://1.bp.blogspot.com/-YIfQT6q8ZM4/Vzyq5z1B8HI/AAAAAAAAAAc/UmWSSMLKtKgtH7CACElUp12zXkrPK5UoACLcB/s1600/image00.png)](https://firebase.google.com/)
+[![N|Solid](https://s3.amazonaws.com/ionic-marketplace/ionic-2-firebase-auth-starter/icon.png)](https://firebase.google.com/)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
