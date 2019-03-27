@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>V.A.A.K</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Handlee|Julius+Sans+One|Orbitron" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <link rel="stylesheet" href="swiper-master/swiper.min.css">
+        <style>
+          #particles-js {
+	          height: 100%;
+	          background: #262626;
+            position: relative;
+            
+          }
+          #text {
+            color:#fff;
+            margin-top: 10%;
+            text-align: center;
+          }
+
+                #home {
+                  margin:0;
+                  background-color: #262626;
+                  height: 100vh;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  overflow: hidden;
+                }
+
+                #desc {
+                  background: rgba(145,185,202,1);
+                  background: -moz-linear-gradient(top, rgba(145,185,202,1) 0%, rgba(145,185,202,1) 77%, rgba(18,79,120,1) 100%);
+                  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(145,185,202,1)), color-stop(77%, rgba(145,185,202,1)), color-stop(100%, rgba(18,79,120,1)));
+                  background: -webkit-linear-gradient(top, rgba(145,185,202,1) 0%, rgba(145,185,202,1) 77%, rgba(18,79,120,1) 100%);
+                  background: -o-linear-gradient(top, rgba(145,185,202,1) 0%, rgba(145,185,202,1) 77%, rgba(18,79,120,1) 100%);
+                  background: -ms-linear-gradient(top, rgba(145,185,202,1) 0%, rgba(145,185,202,1) 77%, rgba(18,79,120,1) 100%);
+                  background: linear-gradient(to bottom, rgba(145,185,202,1) 0%, rgba(145,185,202,1) 77%, rgba(18,79,120,1) 100%);
+                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91b9ca', endColorstr='#124f78', GradientType=0 );
+                  height:100vh;
+                  margin:0;
+                  height: 100vh;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  overflow: hidden;
+
+                }
+
+                #price {
+                  margin:0;
+                  background-color: #452A73;
+                  color: white;
+                  height: 100vh;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  overflow: hidden;
+                }
+                .heading {
+                    font-family: 'Julius Sans One' , sans-serif;
+                    color: #fff;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                }
+                .sec4 , .swiper-pagination{
+                  background: linear-gradient(to right,#141e30,#243b55);
+                  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                  font-size: 14px;
+                  color:#000;
+                  margin: 0;
+                  padding: 0;
+                  display: flex;
+                  justify-content: center;
+                  align-items:flex-end;
+                  
+                }
+
+                .swiper-container {
+                  width: 100%;
+                  padding-top: 200px;
+                  padding-bottom: 50px;
+                }
+                .swiper-slide {
+                  background-position: center;
+                  background-size: cover;
+                  width: 300px;
+                  height: 380px;
+                  background: #262626;
+                }
+
+                .swiper-slide .imgBx {
+                    width: 100%;
+                    height: 300px;
+                    overflow: hidden;
+                }
+                .swiper-slide .imgBx img{
+                    width: 100%;
+                }
+
+                .swiper-details {
+                    box-sizing:border-box;
+                    padding: 20px;
+                }
+
+                .swiper-slide .details h3 {
+                    margin:0;
+                    padding: 0;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                    padding-top: 1rem;
+                }
+
+                .swiper-slide .details h3 span {
+                    font-size: 16px;
+                    color: #f44336;
+                    margin-top: 10px;
+                }
+
+                .details {
+                    color: #fff;
+                }
+                
+                #Feedback {
+                  margin: 0;
+                  padding: 0;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  min-height: 100vh;
+                  background: linear-gradient(to right,#667eea,#764ba2);
+                }
+
+                .container1 {
+                  width: 1200px;
+                  margin:0 auto;
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+                  grid-gap: 20px;
+                  box-sizing: border-box;
+                  padding: 20px;
+                }
+
+                .container1 .box {
+                  position: relative;
+                  padding: 80px 40px 40px;
+                  transition: 0.5s;
+                  text-align: center;
+                  background: #fff;
+                  box-shadow: #000;
+                }
+
+                .container1 .box:hover {
+                  background: #ff0057;
+                }
+
+                .container1 .box p {
+                  margin: 0;
+                  padding: 0;
+                  transition: 0.5s;
+                }
+
+                .container1 .box h4 {
+                  margin: 20px 0 0;
+                  padding: 0;
+                  transition: 0.5s;
+                  font-size: 18px;
+                  color: #ff0057;
+                  font-weight: 700;
+                  line-height: 20px;
+                  text-transform: uppercase;
+                }
+
+                .container1 .box h4 span {
+                  font-weight: 600;
+                  font-size: 14px;
+                  color: #c5c5c5;
+                  transition: 0.5s;
+                }
+
+                .container1 .box:hover p,
+                .container1 .box:hover h4,
+                .container1 .box:hover h4 span {
+                  color: #fff;
+                }
+
+
+                .container1 .box::before {
+                  content: '';
+                  position: absolute;
+                  top: 20px;
+                  right: 40px;
+                  width: 80px;
+                  height: 80px;
+                  background: url('img/quotes.png');
+                  background-size: cover;
+                  opacity: 0.1;
+                  pointer-events: none;
+                  transition: 0.5s;
+                  }
+
+                .container1 .box:hover::before {
+                  transform: translateY(-60px);
+                  opacity: 1;
+                }
+
+                .container1 .box::after {
+                  content: '';
+                  position: absolute;
+                  bottom: 20px;
+                  left: 40px;
+                  width: 80px;
+                  height: 80px;
+                  background: url('img/quotes.png');
+                  background-size: cover;
+                  opacity: 0.1;
+                  pointer-events: none;
+                  transition: 0.5s;
+                  transform: rotate(180deg) translateY(0px);
+                }
+
+                .container1 .box:hover::after {
+                  transform: rotate(180deg) translateY(-60px);
+                  opacity: 1;
+                }
+
+                @media (max-width: 768px)
+                {
+                  .container1 .box
+                  {
+                    margin-top: 80px;
+                  } 
+                }
+
+                .price-div #p1,#p2 {
+                  font-family: 'Julius Sans One',sans-serif;
+                  text-align: center;
+                  padding: 1rem;
+                  margin-top: 1.5rem; 
+                  opacity: 0;
+                }
+
+                .price-div img {
+                  max-width: 100%;
+                  display: flex;
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+
+                .price-div:hover #p1 {
+                    opacity: 1;
+                    transition: all 0.5s ease-in-out;
+                    transform: translateY(-10px);
+                    text-shadow: -7px 6px 10px #000102;
+                    padding-top:40px;
+                }
+
+                .price-div:hover #p2 {
+                    opacity: 1;
+                    transition: all 0.5s ease-in-out;
+                    transform: translateY(10px);
+                    text-shadow: -7px 6px 10px #000102;
+                }
+
+                #main-con {
+                  width: 100%;
+                  height: 100vh;
+                  scroll-behavior: smooth;
+                  overflow-y: scroll;
+                  
+                }
+
+                .btn {
+                  border: 3px solid #c7f305;
+                  background: none;
+                  padding: 10px 20px;
+                  font-size: 20px;
+                  font-family: "montserrat";
+                  cursor: pointer;
+                  margin: 10px;
+                  transition: 0.8s;
+                  position: relative;
+                  overflow: hidden;
+                  z-index: 1;
+                  
+                  
+                }
+
+
+                .btn::before {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  width: 100%;
+                  height: 0%;
+                  background: #f5f5f5;
+                  z-index: -1;
+                  transition: 0.8s;
+                  
+                }
+
+                .btn1::before {
+                  bottom: 0;
+                  border-radius: 50% 50% 0 0;
+                }
+                .btn1:hover::before {
+                  height: 180%;
+                }
+
+                .navbar {
+                  -webkit-box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
+                  -moz-box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
+                  box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
+                }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+                <a class="navbar-brand" href="#" style="font-family: 'orbitron',sans-serif">V.A.A.K</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#desc">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#price">Price</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Feedback">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#team">Our Team</a>
+                    </li>
+                  </ul>
+                </div>
+          </div>
+          </nav>
+      </header>
+      <div id="main-con">
+      <div class="jumbotron jumbotron-fluid height100p banner" id="home">
+        <div id="particles-js">
+        <div class="container h100">
+          <div class="contentBox h100">
+            <div id="text">
+              <h1 style="text-align:center; font-family: 'orbitron',sans-serif">
+                  Voice Augmented Assistive Kit
+              </h1>
+              <p>
+                  This device aims at minimizing the communication gap between the mute/dumb and the general public.
+              </p>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+      <section class="sec1" id="desc">
+        <div class="container">
+            <div class="row">
+                <div class="offset-sm-2 col-sm-8">
+                    <div class="headerText">
+                      <h1 style="text-align: center;font-family: 'Handlee', cursive; padding: 25px;margin-top:90px">Let's see how it works!</h1>
+                        <div style="display: grid; grid-template-columns: auto auto;grid-column-gap: 100px;position: relative;">
+                            <img src="img/machine.gif" style="max-width: 100%">
+                            <p style="width: 100%;text-align: center;line-height: 30px;">The mute/dumb people talk in sign language talk in sign language. Not many people know sign language. Thus there is communication gap between these two groups of people. Our device interprets the finger motion of mute people and analyze it and finally converts it to an alphabet which an automated voice speaks so that common people can listen and understand what they are trying to speak.</p>
+                        </div>
+                        <div style="display: grid; grid-template-columns: auto auto;grid-column-gap: 400px;">
+                          <button class="btn btn1"><a href="how-it-works.html" style="text-decoration: none;color: black;margin: 0">KNOW MORE</a></button>
+                          <button class="btn btn1"><a href="https://www.youtube.com/watch?v=oBpehYPtOAA" style="text-decoration: none;color: black;margin: 0">DEMO</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="sec2" id="price">
+          <div class="container h100" style="margin-top:1rem">
+            <div class="price-div"><h1 id="p1">PRICING</h1>
+                <img src="img/glove-1.jpg" style="-webkit-box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);
+                -moz-box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);
+                box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);">
+                <h1 id="p2">&#x20b9;5000/&dollar;72.5</h1>
+            </div>
+          </div>
+      </section>
+      <section class="sec3" id="Feedback">
+          <div class="container1">
+              <div class="box">
+                <p>Everyone is unique among themselves.Each person is born with special abilities. I think what you kids are doing
+                  for the specially abled kids is truely commendable. I wish you a good luck and hope you guys can develop this product. 
+                </p>
+                <h4>Someone Famous<br><span>Creative Director</span></h4>
+              </div>
+              <div class="box">
+                <p>There is no doubt a communication gap between the mute and the normal. The fact that you people identified this problem and
+                  thought of solving the issue deserves an applause. I am sure if the product is made properly, will help a lot of people in communication.
+                </p>
+                <h4>Someone Famous<br><span>Creative Director</span></h4>
+              </div>
+            </div> 
+      </section> 
+      
+        <section class="sec4" id="team">
+          <div class="swiper-container">
+            <div id="team"><h3 style="text-align:center;color:#fff;padding-bottom:90px;font-family: 'Fredericka the Great', cursive; ">Our Team</h3></div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="imgBx">
+                          <img src="img/img-1.jpg">
+                        </div>
+                        <div class="details">
+                          <h3>Arpan Satpathi<br><span>Web Designer</span></h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgBx">
+                          <img src="img/img-2.jpg">
+                        </div>
+                        <div class="details">
+                          <h3>Daruri Rakesh Acharya<br><span>Hardware Developer</span></h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgBx">
+                          <img src="img/img-3.jpg">
+                        </div>
+                        <div class="details">
+                          <h3>Aditya Kshettri<br><span>Hardware Developer</span></h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgBx">
+                          <img src="img/img-4.jpg">
+                        </div>
+                        <div class="details">
+                          <h3>Soham Sengupta<br><span>Software Developer</span></h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgBx">
+                          <img src="img/img-5.jpg">
+                        </div>
+                        <div class="details">
+                          <h3>Naman Arora<br><span>Software Developer</span></h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgBx">
+                          <img src="img/img-6.jpg">
+                        </div>
+                        <div class="details">
+                          <h3>Rishab Agarwal<br><span>Mobile App Designer</span></h3>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+        </section>
+      </div>
+      <script src="swiper-master/swiper.js" id="s1"></script>
+      <script id="s2"> 
+        var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+            
+            },
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

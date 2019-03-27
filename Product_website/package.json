@@ -1,0 +1,26 @@
+{
+  "name": "vaak",
+  "version": "1.0.0",
+  "description": "Product Showcase Website",
+  "main": "index.js",
+  "homepage": "https://arpan2798.github.io/Product_Showcase",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arpan2798/Product_Showcase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arpan2798/Product_Showcase/issues"
+  },
+  "homepage": "https://github.com/Arpan2798/Product_Showcase#readme"
+}
