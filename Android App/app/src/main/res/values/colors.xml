@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="top_gradient">#e100ff</color>
+    <color name="bottom_gradient">#7f00ff</color>
+    <color name="login_button">#4f35ce</color>
+    <color name="colortext">#FFFFFF</color>
+</resources>

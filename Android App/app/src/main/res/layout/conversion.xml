@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".conversion"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="107dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="302dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded"
+        android:gravity="center"/>
+
+    <SeekBar
+        android:id="@+id/seekBar_volume"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/seekBar_pitch"
+        android:layout_marginTop="270dp"
+        android:layout_alignLeft="@+id/seekBar_pitch" />
+
+    <SeekBar
+        android:id="@+id/seekBar_pitch"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="210dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="178dp"
+        android:background="@drawable/rounded"
+        android:shadowColor="#000000"
+        android:shadowRadius="2dp"
+        android:text="Speak"
+        android:textColor="@color/colortext" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar_pitch"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:text="Pitch"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar_volume"
+        android:layout_alignStart="@+id/textView2"
+        android:text="Speed"
+        android:layout_alignLeft="@+id/textView2"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
