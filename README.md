@@ -14,7 +14,7 @@ VAAK is a college project under the TARP course. Under this course we had to mak
   - Arpan Satpathi
   - Dharoori Rakesh Acharya
 
-# Breif working of the project
+# Brief working of the project
 
 We use flex sensors for getting the input from the fingers of the user. These sensors are connected to an arduino uno, which processes and sends the data to a raspberry pi serially or to a wifi card, which then sends the data to a firebase realtime database. The android app interacts with this database and reads out the interpreted text.
 
