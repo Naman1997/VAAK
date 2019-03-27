@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Fredericka+the+Great|Handlee|Julius+Sans+One|Orbitron" rel="stylesheet">
+
+	<link rel="stylesheet" href="page-scroll-effects-master/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="page-scroll-effects-master/css/style.css"> <!-- Resource style -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="page-scroll-effects-master/js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>How It Works</title>
+	
+</head>
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+
+<body data-hijacking="off" data-animation="rotate">
+	<section class="cd-section visible">
+		<div class="div" style="display: grid; grid-template-columns: auto auto;grid-column-gap: 100px;height: 100vh;justify-content: center;align-items: center">
+			<img src="img/first.gif" style="max-width: 100%;margin: 100px;-webkit-box-shadow: -16px 13px 25px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: -16px 13px 25px 0px rgba(0,0,0,0.75);
+			box-shadow: -16px 13px 25px 0px rgba(0,0,0,0.75);">
+			<p style="margin:50px;font-family: 'Cabin Sketch',cursive;font-size: 3rem;text-align: center">The first step is to aquire the flex sensor data and transmit it to arduino microcontroller.Whenever the flex sensor is bent its resistance value is changed.</p>
+        </div>
+	</section>
+
+	<section class="cd-section">
+		<div class="div" style="display: grid; grid-template-columns: auto auto;grid-column-gap: 100px;height: 100vh;justify-content: center;align-items: center">
+			<p style="margin: 50px;font-family: 'Cabin Sketch',cursive;font-size: 3rem;text-align: center">Once the resistance values are acquired from the sensors, they are converted to thier respective alphabets. Those alphabets are then send to the google Firebase where furthur processing takes place.</p>
+			<img src="img/second.gif" class="gif" style="max-width: 80%; margin:100px;-webkit-box-shadow: -20px 15px 22px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -20px 15px 22px 0px rgba(0,0,0,0.75);
+box-shadow: -20px 15px 22px 0px rgba(0,0,0,0.75);">
+		</div>
+	</section>
+
+	<section class="cd-section">
+		<div class="div" style="display: grid; grid-template-columns: auto auto;grid-column-gap: 100px;height: 100vh;justify-content: center;align-items: center">
+			<img src="img/third.gif" style="max-width: 100%; margin:100px; -webkit-box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);
+			-moz-box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);
+			box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);">
+			<p style="margin: 50px;font-family: 'Cabin Sketch',cursive;font-size: 3rem;text-align: center">After this the alphabets are sent to an android app where text to speech conversion takes place so that common people can know what the user is trying to say.</p>
+		</div>
+	</section>
+
+	<nav>
+		<ul class="cd-vertical-nav">
+			<li><a href="#0" class="cd-prev inactive">Next</a></li>
+			<li><a href="#0" class="cd-next">Prev</a></li>
+		</ul>
+	</nav> <!-- .cd-vertical-nav -->
+<script src="page-scroll-effects-master/js/jquery-2.1.4.js"></script>
+<script src="page-scroll-effects-master/js/velocity.min.js"></script>
+<script src="page-scroll-effects-master/js/velocity.ui.min.js"></script>
+<script src="page-scroll-effects-master/js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
