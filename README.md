@@ -35,7 +35,7 @@ The code given in this repo is only for *alphabet* reading and nothing else.
 
 We used a raspberry pi to send the data to the firebase realtime database using the *rev.py* script. You can learn more about it [here](https://www.instructables.com/id/Raspberry-Pi-Arduino-Serial-Communication/).
 
-### Installation
+### Installation for RPi
 
 The application requires [Arduino IDE](https://www.microsoft.com/en-in/p/arduino-ide/9nblggh4rsd8?ocid=badge&rtc=1&activetab=pivot%3Aoverviewtab) so that you can push your code into your arduino and needs [Android Studio](https://developer.android.com/studio) so that you can build the android app files.
 
