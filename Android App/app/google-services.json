@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "469180888395",
+    "firebase_url": "https://vaak-eeda0.firebaseio.com",
+    "project_id": "vaak-eeda0",
+    "storage_bucket": "vaak-eeda0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469180888395:android:cc299e91c8d5d960",
+        "android_client_info": {
+          "package_name": "c.vaak.vaak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469180888395-2rvohlb9tl6holm0jvp55bgnir37dcta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYLS4bGchkn2vEJTmkx-AYPvOtbT5PU7g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
