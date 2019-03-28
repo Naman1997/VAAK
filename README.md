@@ -1,4 +1,4 @@
-# tarp-serial-connection-code
+# Introduction
 [![N|Solid](https://i.ebayimg.com/images/g/pT0AAOSwX~dWmbz4/s-l300.jpg)](https://www.arduino.cc/)
 [![N|Solid](https://s3.amazonaws.com/ionic-marketplace/ionic-2-firebase-auth-starter/icon.png)](https://firebase.google.com/)
 [![N|Solid](https://raw.githubusercontent.com/iiiypuk/rpi-icon/master/256.png)](https://www.raspberrypi.org/)
@@ -13,7 +13,9 @@ VAAK is a college project under the TARP course. Under this course we had to mak
   - Aditya Kshetriya
   - Arpan Satpathi
   - Dharoori Rakesh Acharya
-
+  
+  Checkout out our product website [here](https://arpan2798.github.io/Product_Showcase/index.html#home)
+  
 # Brief working of the project
 
 We use flex sensors for getting the input from the fingers of the user. These sensors are connected to an arduino uno, which processes and sends the data to a raspberry pi serially or to a wifi card, which then sends the data to a firebase realtime database. The android app interacts with this database and reads out the interpreted text.
