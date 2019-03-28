@@ -50,9 +50,9 @@ Before you move on to the next section, you need to set up your input circuit wi
 
 # Installation for RPi
 
-The application requires [Arduino IDE](https://www.microsoft.com/en-in/p/arduino-ide/9nblggh4rsd8?ocid=badge&rtc=1&activetab=pivot%3Aoverviewtab) so that you can push your code into your arduino and needs [Android Studio](https://developer.android.com/studio) so that you can build the android app files.
+The application requires [Arduino IDE](https://www.microsoft.com/en-in/p/arduino-ide/9nblggh4rsd8?ocid=badge&rtc=1&activetab=pivot%3Aoverviewtab) so that you can push your code into your arduino.
 
-If you are using a raspberry pi as we have to send the data over to a firebase realime database, you will need to install the following dependencies:
+You will need to install the following dependencies on your RPi:
 
 
 ```sh
