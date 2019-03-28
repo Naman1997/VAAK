@@ -21,7 +21,7 @@ Now, one flex sensor gives us 2 values; either 1 or 0. In our latest version of 
 You can see below how you can connect one flex sensor to the arduino uno board.
 ![N|Solid](https://cdn.sparkfun.com/assets/learn_tutorials/5/1/1/example_circuit_bb.png)
 
-However, we are using 5 flex sensors, and their connections is as shown below
+However, we are using 5 flex sensors, and their connections is as shown below:
 
 ![N|Solid](https://i0.wp.com/www.marcopucci.it/wp-content/uploads/2014/06/flex_sensor_5_dita_bb.jpg)
 
@@ -34,4 +34,6 @@ Once the code has been uploaded, it will be executed and a small window should a
 If all sensors are straight, the default value will be 'NO'. However, once you bend your sensors, the values should change and instead show other alphabets.
 
 # Connection with Raspberry Pi
-Now that you have tested your output to be accurate, use the included USB cable of your arduino to connect to your Raspberry Pi.
+Now that you have tested your output to be accurate, use the included USB cable of your arduino and connect your Raspberry Pi to your Arduino.
+
+Now go back to [README.md](https://github.com/Naman1997/VAAK-firebase-arduino-python_serial_comunication-/blob/master/README.md) and start reading from *Prerequisites*.
