@@ -19,6 +19,11 @@ VAAK is a college project under the TARP course. Under this course we had to mak
   
   Checkout out our product website [here](https://arpan2798.github.io/Product_Showcase/index.html#home)
   
+# Tech Used
+- Arduino IDE 1.8.9 (for burning the code into the Arduino)
+- Python 2.7 (to upload the alphabets received by the Raspi to the Firebase)
+- Android Studio 3.1.4 (for making an app for text to speech conversion)
+  
 # Brief working of the project
 
 We use flex sensors for getting the input from the fingers of the user. These sensors are connected to an arduino uno, which processes and sends the data to a raspberry pi serially or to a wifi card, which then sends the data to a firebase realtime database. The android app interacts with this database and reads out the interpreted text.
