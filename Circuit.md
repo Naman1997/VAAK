@@ -19,11 +19,8 @@ Now, one flex sensor gives us 2 values; either 1 or 0. In our latest version of 
 - USB cable(Arduino to RPi connection)
 # Arduino connection with flex sensors
 You can see below how you can connect one flex sensor to the arduino uno board.
-[![N|Solid](https://cdn.sparkfun.com/assets/learn_tutorials/5/1/1/example_circuit_bb.png)](https://learn.sparkfun.com/tutorials/flex-sensor-hookup-guide/all)
+[![N|Solid](https://cdn.sparkfun.com/assets/learn_tutorials/5/1/1/example_circuit_bb.png)]
 
 However, we are using 5 flex sensors, and their connections is as shown below
 
-[![N|Solid](http://www.marcopucci.it/wp-content/uploads/2014/06/flex_sensor_5_dita_giallo.jpg)](https://learn.sparkfun.com/tutorials/flex-sensor-hookup-guide/all)
-
-You can further find a proper guide by clicking on the images above or going [here](https://learn.sparkfun.com/tutorials/flex-sensor-hookup-guide/all)
-
+[![N|Solid](https://i0.wp.com/www.marcopucci.it/wp-content/uploads/2014/06/flex_sensor_5_dita_bb.jpg)](https://learn.sparkfun.com/tutorials/flex-sensor-hookup-guide/all)
