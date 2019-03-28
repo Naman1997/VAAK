@@ -5,7 +5,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-This guide expalins how to setup your raspberry pi and explains the general structure of the project
+This guide explains how to setup your raspberry pi and explains the general structure of the project
 
 # Introduction
 VAAK is a college project under the TARP course. Under this course we had to make groups and come up with creative solutions to real world problems and implement them. Our group decided to make a project that helped specially-abled people who cannot speak by making a device that took input from their fingers in a fixed format(For example: American Sign Language), process it and play out the processed data via a speaker that is either interfaced with an android smartphone or simply a smartphone's inbuilt speaker. Members under the project are:
@@ -17,7 +17,7 @@ VAAK is a college project under the TARP course. Under this course we had to mak
   - Arpan Satpathi
   - Dharoori Rakesh Acharya
   
-  Checkout out our product website [here](https://arpan2798.github.io/Product_Showcase/index.html#home). Also checkout our project report [here](https://github.com/Naman1997/VAAK-firebase-arduino-python_serial_comunication-/blob/master/Project%20Report.pdf)
+  Check out out our product website [here](https://arpan2798.github.io/Product_Showcase/index.html#home). Also check out our project report [here](https://github.com/Naman1997/VAAK-firebase-arduino-python_serial_comunication-/blob/master/Project%20Report.pdf)
   
 # Tech Used
 - Arduino IDE 1.8.9 (for burning the code into the Arduino)
@@ -26,51 +26,51 @@ VAAK is a college project under the TARP course. Under this course we had to mak
   
 # Brief working of the project
 
-We use flex sensors for getting the input from the fingers of the user. These sensors are connected to an arduino uno, which processes and sends the data to a raspberry pi serially or to a wifi card, which then sends the data to a firebase realtime database. The android app interacts with this database and reads out the interpreted text.
+We use flex sensors for getting the input from the fingers of the user. These sensors are connected to an Arduino Uno, which processes and sends the data to a raspberry pi serially, which then sends the data to a Firebase Realtime database. The android app interacts with this database and reads out the interpreted text.
 
-For now, we did not study the American Sign Language, so we used the sensors to send alphabet combinations instead.
+For now, we did not study the American Sign Language, so we used the sensors to send alphabet combination instead.
 For example, since we have 26 alphabets, we use 5 flex sensors and assign each binary combinaion of the input to a specific alphabet.
-In this repository, however, we have only used 2 sensors, so make sure to edit the .ino file accordingly.
+In this repository, however, we have both used 2 and 5 sensors, so make sure to use the correct .ino file.
 
 
-So the project can be divided in the following parts:
-  - Getting the data from arduino uno
-  - Processing the data inside the arduino script
-  - Sending the data to a raspberry pi, or a wifi module
-  - Transmitting the data to a specific firebase realtime database
+The project can be divided in the following parts:
+  - Getting the data from Arduino Uno
+  - Processing the data inside the Arduino script
+  - Sending the data to a Raspberry Pi, or a wifi module
+  - Transmitting the data to a specific Firebase Realtime database
   - Using the android app to consume the data from the database
   - Using the app to control the speakers connected to the device and reading out the text/alphabet
 
 The code given in this repo is only for *alphabet* reading and nothing else.
 
-We used a raspberry pi to send the data to the firebase realtime database using the *rev.py* script. You can learn more about it [here](https://www.instructables.com/id/Raspberry-Pi-Arduino-Serial-Communication/).
+We used a raspberry pi to send the data to the Firebase Realtime database using the *rev.py* script. You can learn more about it [here](https://www.instructables.com/id/Raspberry-Pi-Arduino-Serial-Communication/).
 
 # Important
-Before you move on to the next section, you need to set up your input circuit with the arduino. To learn how to do that go to [Circuit.md](https://github.com/Naman1997/VAAK-firebase-arduino-python_serial_comunication-/blob/master/Circuit.md). The application requires [Arduino IDE](https://www.microsoft.com/en-in/p/arduino-ide/9nblggh4rsd8?ocid=badge&rtc=1&activetab=pivot%3Aoverviewtab) so that you can push your code into your arduino.
+Before you move on to the next section, you need to set up your input circuit with the Arduino. To learn how to do that go to [Circuit.md](https://github.com/Naman1997/VAAK-firebase-arduino-python_serial_comunication-/blob/master/Circuit.md). The application requires [Arduino IDE](https://www.microsoft.com/en-in/p/arduino-ide/9nblggh4rsd8?ocid=badge&rtc=1&activetab=pivot%3Aoverviewtab) so that you can push your code into your Arduino.
 
 # Prerequisites
 ## For Android App
-In RPi/app/src/main/java/c/vaak/vaak/MainActivity.java, replace *#YOUR_EMAIL* with your gmail ID with which firebase authentication is enabled and *#YOUR_PASSWORD* with the password for authentication.
+In RPi/app/src/main/java/c/vaak/vaak/MainActivity.java, replace *#YOUR_EMAIL* with your Gmail ID with which firebase authentication is enabled and *#YOUR_PASSWORD* with the password for authentication.
 
 To get the values mentioned above, you need to:
 - Create an Authentication Method
 - Create a Realtime Database
 
 ### For Authentication Method
-Go to your firebase console and create a new project. Now go to the console and click on Authentication > Sign-in method > Email/Password. Add the your gmail ID and your access password. These will be the values of  *#YOUR_EMAIL* and *#YOUR_PASSWORD* respectively.
+Go to your firebase console and create a new project. Now go to the console and click on Authentication > Sign-in method > Email/Password. Add your Gmail ID and your access password. These will be the values of  *#YOUR_EMAIL* and *#YOUR_PASSWORD* respectively.
 
 ### For Realtime Database
-Go to the console and click on Database > Create Database > (Start in test mode) > Enable. This will create an instance of both Firestore and Realtime Database. To go to realtime database click on the dropdown menu and select Realtime Database. The link that you see will be the value of *#Link_to_your_realtime_database* in the next section.
+Go to the console and click on Database > Create Database > (Start in test mode) > Enable. This will create an instance of both Firestore and Realtime Database. To go to Realtime database click on the dropdown menu and select Realtime Database. The link that you see will be the value of *#Link_to_your_realtime_database* in the next section.
 
 ## For Raspberry Pi
-In all files within the *Raspberry Code* folder, replace *#Location_of_your_private_key_generated_in_firebase(a json file)* with the location of the json file in your device which will be generated by firebase. You can generate the file for this @Project Settings(Icon next to Project Overview) > Service Accounts > Generate new private key.
+In all files within the *Raspberry Code* folder, replace *#Location_of_your_private_key_generated_in_firebase(a json file)* with the location of the json file in your device which will be generated by firebase. You can generate the file for this @Project Settings (Icon next to Project Overview) > Service Accounts > Generate new private key.
 
-Also replace *#Link_to_your_realtime_database* with the link to your firebase realtime database. You can find it by going to Develop > Database >Realtime Database > (copy the link in the form "https://Project-name.firebaseio.com")
+Also replace *#Link_to_your_realtime_database* with the link to your firebase Realtime database. You can find it by going to Develop > Database >Realtime Database > (copy the link in the form "https://Project-name.firebaseio.com")
 
 To learn more about the method we have used go to [Introduction to the Admin Database API](https://firebase.google.com/docs/database/admin/start) and use the *Python* language.
 
 
-# Installation for RPi
+# Installation for Raspberry Pi
 You will need to install the following dependencies on your RPi:
 
 
@@ -80,8 +80,8 @@ $ pip install firebase-admin
 $ pip install time      #only if you want to give delays like: time.sleep(3)
 ```
 
-After making sure you are getting the accurate values from your arduino, connect your raspberry pi with your arduino via the included USB cable.
-Now our arduino code is running on a serial connection on the raspberry pi continuously. You can check if your raspberry pi detected your arduino by running the following command in your terminal:
+After making sure you are getting the accurate values from your Arduino, connect your Raspberry Ri with your Arduino via the included USB cable.
+Now our Arduino code is running on a serial connection on the Raspberry Pi continuously. You can check if your raspberry pi detected your Arduino by running the following command in your terminal:
 
 ```sh
 ls /dev/tty*
@@ -91,7 +91,7 @@ Now run the python script by running the following command in your terminal:
 ```sh
 python rev.py
 ```
-This will send your arduino data to your firebase realtime database. Which you can use in the android app.
+This will send your Arduino data to your firebase Realtime database. Which you can use in the android app.
 
 # Buiding the Android App
 Open Android studio and click on *Import existing project*. Now browse to the location where you have downloaded the repository and import the folder named "Android App for using data from RPi". Now that the project is imported you can run the app in your emulator or make an apk for installation on your own device.
