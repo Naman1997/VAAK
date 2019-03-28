@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
 
     public void login()
     {
-        firebaseAuth.signInWithEmailAndPassword("rishab2000agarwal@gmail.com","vaakvaak").addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+        firebaseAuth.signInWithEmailAndPassword("#YOUR_EMAIL","#YOUR_PASSWORD").addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult)
             {
