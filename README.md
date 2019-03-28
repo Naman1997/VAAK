@@ -17,7 +17,7 @@ VAAK is a college project under the TARP course. Under this course we had to mak
   - Arpan Satpathi
   - Dharoori Rakesh Acharya
   
-  Checkout out our product website [here](https://arpan2798.github.io/Product_Showcase/index.html#home)
+  Checkout out our product website [here](https://arpan2798.github.io/Product_Showcase/index.html#home). Also checkout the our project report [here](https://github.com/Naman1997/VAAK-firebase-arduino-python_serial_comunication-/blob/master/Project%20Report.pdf)
   
 # Tech Used
 - Arduino IDE 1.8.9 (for burning the code into the Arduino)
