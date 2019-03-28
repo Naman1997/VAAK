@@ -91,4 +91,7 @@ Now run the python script by running the following command in your terminal:
 ```sh
 python rev.py
 ```
-This will send your arduino data to your firebase realtime database. Which you can use in an android app.
+This will send your arduino data to your firebase realtime database. Which you can use in the android app.
+
+# Buiding the Android App
+Open Android studio and click on *Import existing project*. Now browse to the location where you have downloaded the repository and import the folder named "Android App for using data from RPi". Now that the project is imported you can run the app in your emulator or make an apk for installation on your own device.
