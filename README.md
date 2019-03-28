@@ -4,6 +4,7 @@
 [![N|Solid](https://raw.githubusercontent.com/iiiypuk/rpi-icon/master/256.png)](https://www.raspberrypi.org/)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
 This guide expalins how to setup your raspberry pi and the general structure of the project
 
 # Introduction
