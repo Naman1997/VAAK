@@ -45,6 +45,9 @@ The code given in this repo is only for *alphabet* reading and nothing else.
 
 We used a raspberry pi to send the data to the firebase realtime database using the *rev.py* script. You can learn more about it [here](https://www.instructables.com/id/Raspberry-Pi-Arduino-Serial-Communication/).
 
+# Important
+Before you move on to the next section, you need to set up your input circuit with the arduino. To learn how to do that go to [Circuit.md](https://github.com/Naman1997/VAAK-firebase-arduino-python_serial_comunication-/blob/master/Circuit.md)
+
 # Prerequisites
 ## For Android App
 In RPi/app/src/main/java/c/vaak/vaak/MainActivity.java, replace *#YOUR_EMAIL* with your gmail ID with which firebase authentication is enabled and *#YOUR_PASSWORD* with the password for authentication.
@@ -65,8 +68,7 @@ In all files within the *Raspberry Code* folder, replace *#Location_of_your_priv
 Also replace *#Link_to_your_realtime_database* with the link to your firebase realtime database. You can find it by going to Develop > Database >Realtime Database > (copy the link in the form "https://Project-name.firebaseio.com")
 
 To learn more about the method we have used go to [Introduction to the Admin Database API](https://firebase.google.com/docs/database/admin/start) and use the *Python* language.
-# Important
-Before you move on to the next section, you need to set up your input circuit with the arduino. To learn how to do that go to [Circuit.md](https://github.com/Naman1997/VAAK-firebase-arduino-python_serial_comunication-/blob/master/Circuit.md)
+
 
 # Installation for RPi
 
