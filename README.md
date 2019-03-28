@@ -46,7 +46,7 @@ The code given in this repo is only for *alphabet* reading and nothing else.
 We used a raspberry pi to send the data to the firebase realtime database using the *rev.py* script. You can learn more about it [here](https://www.instructables.com/id/Raspberry-Pi-Arduino-Serial-Communication/).
 
 # Important
-Before you move on to the next section, you need to set up your input circuit with the arduino. To learn how to do that go to [Circuit.md](https://github.com/Naman1997/VAAK-firebase-arduino-python_serial_comunication-/blob/master/Circuit.md)
+Before you move on to the next section, you need to set up your input circuit with the arduino. To learn how to do that go to [Circuit.md](https://github.com/Naman1997/VAAK-firebase-arduino-python_serial_comunication-/blob/master/Circuit.md). The application requires [Arduino IDE](https://www.microsoft.com/en-in/p/arduino-ide/9nblggh4rsd8?ocid=badge&rtc=1&activetab=pivot%3Aoverviewtab) so that you can push your code into your arduino.
 
 # Prerequisites
 ## For Android App
@@ -71,9 +71,6 @@ To learn more about the method we have used go to [Introduction to the Admin Dat
 
 
 # Installation for RPi
-
-The application requires [Arduino IDE](https://www.microsoft.com/en-in/p/arduino-ide/9nblggh4rsd8?ocid=badge&rtc=1&activetab=pivot%3Aoverviewtab) so that you can push your code into your arduino.
-
 You will need to install the following dependencies on your RPi:
 
 
